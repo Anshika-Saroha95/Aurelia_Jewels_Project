@@ -1,0 +1,241 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* Global Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar{
+    padding: 18px 0;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    color: #D4AF37 !important;
+}
+
+.nav-link{
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #D4AF37 !important;
+}
+
+.fa-heart,
+.fa-cart-shopping{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fa-heart:hover,
+.fa-cart-shopping:hover{
+    color: #D4AF37;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #FFF8E7;
+}
+
+.hero h1{
+    font-size: 4rem;
+    color: #222;
+}
+
+.hero p{
+    color: #666;
+    line-height: 1.8;
+}
+
+.hero img{
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+
+.btn-dark{
+    background: #222;
+    border: none;
+    transition: 0.4s;
+}
+
+.btn-dark:hover{
+    background: #D4AF37;
+    color: #000;
+}
+
+.btn-outline-dark:hover{
+    background: #D4AF37;
+    border-color: #D4AF37;
+    color: #000;
+}
+
+/* Section Headings */
+
+section h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Categories */
+
+.card{
+    border: none;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card h4{
+    color: #D4AF37;
+}
+
+/* Products */
+
+.card img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body h5{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-body p{
+    color: #666;
+    font-weight: 500;
+}
+
+/* Features */
+
+.features .card{
+    padding: 25px;
+}
+
+.features h4{
+    font-size: 2rem;
+}
+
+/* Newsletter */
+
+.bg-dark{
+    background: #1E1E1E !important;
+}
+
+.bg-dark h2{
+    color: #D4AF37;
+}
+
+.input-group input{
+    padding: 12px;
+}
+
+.btn-warning{
+    background: #D4AF37;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-warning:hover{
+    background: #c49d21;
+}
+
+/* Footer */
+
+footer{
+    background: #f8f8f8;
+}
+
+footer h4{
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer ul li:hover{
+    color: #D4AF37;
+}
+
+footer i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer i:hover{
+    color: #D4AF37;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .hero{
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero img{
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:576px){
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    section h2{
+        font-size: 2rem;
+    }
+
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+}
